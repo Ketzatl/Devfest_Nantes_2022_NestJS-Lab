@@ -44,11 +44,8 @@ async function bootstrap() {
 
     await app.listen(configService.get('port'));
 
-  console.log("\x1b[33m%s\x1b[0m", "\n\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"); // yellow text
-  console.log(`\t >> Server listening on port 3000 <<`);
-  console.log(`\t >> Visit API Swagger here : http://localhost:8080/api <<`);
-  console.log(`\t >> Visit API Starships here : http://localhost:3000/v1/starships <<`);
-  console.log(`\t >> Visit API Planetss here : http://localhost:3000/v1/planets << \n`);
-  console.log("\x1b[33m%s\x1b[0m", "\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< \n"); // yellow text
+  console.log("\x1b[33m%s\x1b[0m", "\n\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<\n"); // yellow text
+  console.log(`\t >> Visit API Swagger here : http://localhost:8080/api <<\n`);
+  console.log("\x1b[33m%s\x1b[0m", "\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<< \n"); // yellow text
 }
 bootstrap();
