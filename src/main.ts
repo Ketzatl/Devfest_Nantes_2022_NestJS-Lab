@@ -45,7 +45,7 @@ async function bootstrap() {
     await app.listen(configService.get('port'));
 
   console.log("\x1b[33m%s\x1b[0m", "\n\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<\n"); // yellow text
-  console.log(`\t >> Visit API Swagger here : http://localhost:8080/api <<\n`);
+  console.log(`\t >> Visit API Swagger here : http://localhost:8080/api << \n`);
   console.log("\x1b[33m%s\x1b[0m", "\t >>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<< \n"); // yellow text
 }
 bootstrap();
