@@ -2,9 +2,8 @@ import {Injectable, NotFoundException} from '@nestjs/common';
 import { CreateStarshipDto } from './dto/create-starship.dto';
 import { UpdateStarshipDto } from './dto/update-starship.dto';
 import {InjectRepository} from "@nestjs/typeorm";
-import {Repository} from "typeorm/repository/Repository";
 import {Starship} from "./entities/starship.entity";
-import {DeleteResult} from "typeorm";
+import {DeleteResult, Repository} from "typeorm";
 
 @Injectable()
 export class StarshipService {
